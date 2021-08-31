@@ -1,6 +1,6 @@
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 import {
-  HStack,
+  Stack,
   Button,
   Breadcrumb,
   BreadcrumbItem,
@@ -9,7 +9,11 @@ import {
 
 const Header = () => {
   return (
-    <HStack justifyContent="space-between" w="full">
+    <Stack
+      direction={{ base: 'column', md: 'row' }}
+      justifyContent="space-between"
+      w="full"
+    >
       <Button leftIcon={<IoIosArrowBack />} variant="outline" rounded="full">
         Go home
       </Button>
@@ -32,7 +36,7 @@ const Header = () => {
           <BreadcrumbLink color="brand.500">Belgrade</BreadcrumbLink>
         </BreadcrumbItem>
       </Breadcrumb>
-    </HStack>
+    </Stack>
   );
 };
 

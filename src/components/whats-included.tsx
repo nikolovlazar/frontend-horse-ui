@@ -4,12 +4,9 @@ import {
   Heading,
   Icon,
   Text,
-  Box,
   AspectRatio,
   GridItem,
-  Grid,
   HStack,
-  Spacer,
 } from '@chakra-ui/react';
 import { IoFastFoodOutline, IoBicycleOutline } from 'react-icons/io5';
 import { HiWifi } from 'react-icons/hi';
@@ -46,10 +43,10 @@ const WhatsIncluded = () => {
   return (
     <VStack spacing={6} alignItems="flex-start">
       <Heading size="lg">What's included?</Heading>
-      <Grid templateColumns="repeat(4, 1fr)" gap={8} w="full">
+      <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} gap={8} w="full">
         {items.map(({ icon, color, text, title }) => (
           <GridItem key={title}>
-            <AspectRatio ratio={1}>
+            <AspectRatio ratio={{ base: 16 / 9, md: 1 }}>
               <VStack
                 h="full"
                 justifyContent="space-between"
@@ -73,7 +70,7 @@ const WhatsIncluded = () => {
             </AspectRatio>
           </GridItem>
         ))}
-      </Grid>
+      </SimpleGrid>
     </VStack>
   );
 };

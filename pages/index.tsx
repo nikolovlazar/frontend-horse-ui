@@ -7,7 +7,7 @@ import TitleDetails from '../src/components/title';
 import WhatsIncluded from '../src/components/whats-included';
 
 const IndexPage = () => (
-  <Container maxW="container.xl" py={10} px={0}>
+  <Container maxW="container.xl" py={10}>
     <VStack spacing={8} alignItems="stretch">
       <Header />
       <TitleDetails />

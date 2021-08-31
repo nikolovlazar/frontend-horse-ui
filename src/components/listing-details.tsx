@@ -14,6 +14,7 @@ import {
   MenuButton,
   Button,
   GridItem,
+  Stack,
 } from '@chakra-ui/react';
 import { HiStar } from 'react-icons/hi';
 import { IoIosArrowDown } from 'react-icons/io';
@@ -21,7 +22,11 @@ import IconLabel from './icon-label';
 
 const ListingDetails = () => {
   return (
-    <HStack spacing={8} alignItems="flex-start">
+    <Stack
+      direction={{ base: 'column', md: 'row' }}
+      spacing={8}
+      alignItems="flex-start"
+    >
       <VStack spacing={6} alignItems="flex-start">
         <VStack spacing={2} alignItems="flex-start">
           <Heading size="lg">All about Lazar's place</Heading>
@@ -66,7 +71,8 @@ const ListingDetails = () => {
       </VStack>
       <VStack
         w="full"
-        maxW={96}
+        maxW={{ base: 80, lg: 96 }}
+        flexShrink={0}
         p={6}
         spacing={6}
         justifyContent="stretch"
@@ -77,7 +83,7 @@ const ListingDetails = () => {
       >
         <HStack justifyContent="space-between">
           <VStack>
-            <HStack spacing={2}>
+            <HStack spacing={2} w="full">
               <Heading size="lg" textDecoration="line-through" color="gray.500">
                 $115
               </Heading>
@@ -204,7 +210,7 @@ const ListingDetails = () => {
           </HStack>
         </VStack>
       </VStack>
-    </HStack>
+    </Stack>
   );
 };
 

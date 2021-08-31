@@ -1,10 +1,16 @@
-import { VStack, HStack, Heading, Text } from '@chakra-ui/react';
+import { VStack, Stack, Heading, Text } from '@chakra-ui/react';
 
 const ThingsToKnow = () => {
   return (
     <VStack spacing={6} alignItems="flex-start">
       <Heading size="lg">Things to know</Heading>
-      <HStack justifyContent="space-between" alignItems="flex-start" w="full">
+      <Stack
+        direction={{ base: 'column', md: 'row' }}
+        justifyContent="space-between"
+        alignItems="flex-start"
+        w="full"
+        spacing={8}
+      >
         <VStack spacing={2} alignItems="flex-start" maxW={60}>
           <Heading size="md">House rules</Heading>
           <VStack spacing={3} alignItems="flex-start">
@@ -32,7 +38,7 @@ const ThingsToKnow = () => {
             <Text>Free cancellation before Nov 14</Text>
           </VStack>
         </VStack>
-      </HStack>
+      </Stack>
     </VStack>
   );
 };

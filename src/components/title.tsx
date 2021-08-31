@@ -1,6 +1,7 @@
 import {
   Heading,
   HStack,
+  Stack,
   Icon,
   IconButton,
   Text,
@@ -20,8 +21,13 @@ import IconLabel from './icon-label';
 const TitleDetails = () => {
   return (
     <VStack spacing={4} alignItems="stretch">
-      <HStack justifyContent="space-between">
-        <Heading size="2xl">Beach House Belgrade</Heading>
+      <Stack
+        direction={{ base: 'column', md: 'row' }}
+        justifyContent="space-between"
+      >
+        <Heading fontSize={{ base: '4xl', lg: '5xl' }}>
+          Beach House Belgrade
+        </Heading>
         <HStack spacing={4}>
           <IconButton
             variant="pill"
@@ -40,8 +46,12 @@ const TitleDetails = () => {
             icon={<FiMoreHorizontal />}
           />
         </HStack>
-      </HStack>
-      <HStack spacing={6}>
+      </Stack>
+      <Stack
+        direction={{ base: 'column', md: 'row' }}
+        justifyContent="space-between"
+        spacing={6}
+      >
         <IconLabel
           icon={<Icon fontSize={24} as={HiStar} color="yellow.400" />}
           separator={
@@ -71,7 +81,7 @@ const TitleDetails = () => {
           <Text size="md">2 beds</Text>
           <Text size="md">1 bath</Text>
         </IconLabel>
-      </HStack>
+      </Stack>
     </VStack>
   );
 };
