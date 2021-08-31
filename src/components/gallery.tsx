@@ -25,7 +25,7 @@ const Gallery = () => {
         <AspectRatio ratio={1}>
           <Image
             objectFit="cover"
-            rounded="3xl"
+            rounded={{ base: 'xl', md: '3xl' }}
             src={first}
             alt="Beach House Photo"
           />
@@ -40,7 +40,11 @@ const Gallery = () => {
           rowStart={{ base: 4, md: index + 1 }}
         >
           <AspectRatio ratio={1}>
-            <Image rounded="3xl" src={image} alt="Beach House Photo" />
+            <Image
+              rounded={{ base: 'xl', md: '3xl' }}
+              src={image}
+              alt="Beach House Photo"
+            />
           </AspectRatio>
         </GridItem>
       ))}
@@ -54,7 +58,7 @@ const Gallery = () => {
           <Button
             alignItems="center"
             justifyContent="center"
-            rounded="3xl"
+            rounded={{ base: 'xl', md: '3xl' }}
             bg="gray.100"
           >
             <Text
