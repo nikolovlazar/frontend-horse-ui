@@ -51,6 +51,7 @@ const TitleDetails = () => {
         direction={{ base: 'column', md: 'row' }}
         justifyContent="space-between"
         spacing={6}
+        w={{ base: 'auto', md: 'fit-content' }}
       >
         <IconLabel
           icon={<Icon fontSize={24} as={HiStar} color="yellow.400" />}

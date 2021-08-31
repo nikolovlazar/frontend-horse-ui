@@ -43,7 +43,7 @@ const WhatsIncluded = () => {
   return (
     <VStack spacing={6} alignItems="flex-start">
       <Heading size="lg">What's included?</Heading>
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} gap={8} w="full">
+      <SimpleGrid columns={{ base: 1, md: 3, lg: 4 }} gap={8} w="full">
         {items.map(({ icon, color, text, title }) => (
           <GridItem key={title}>
             <AspectRatio ratio={{ base: 16 / 9, md: 1 }}>
