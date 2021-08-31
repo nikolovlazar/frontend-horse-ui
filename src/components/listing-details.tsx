@@ -71,7 +71,7 @@ const ListingDetails = () => {
       </VStack>
       <VStack
         w="full"
-        maxW={{ base: 80, lg: 96 }}
+        maxW={{ base: 'auto', md: 80, lg: 96 }}
         flexShrink={0}
         p={6}
         spacing={6}
