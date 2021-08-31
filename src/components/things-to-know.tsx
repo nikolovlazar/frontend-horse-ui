@@ -11,7 +11,11 @@ const ThingsToKnow = () => {
         w="full"
         spacing={8}
       >
-        <VStack spacing={2} alignItems="flex-start" maxW={60}>
+        <VStack
+          spacing={2}
+          alignItems="flex-start"
+          maxW={{ base: 'fit-content', md: 60 }}
+        >
           <Heading size="md">House rules</Heading>
           <VStack spacing={3} alignItems="flex-start">
             <Text>Check-in: After 1:00 PM</Text>
@@ -21,7 +25,11 @@ const ThingsToKnow = () => {
             <Text>Smoking is allowed</Text>
           </VStack>
         </VStack>
-        <VStack spacing={2} alignItems="flex-start" maxW={60}>
+        <VStack
+          spacing={2}
+          alignItems="flex-start"
+          maxW={{ base: 'fit-content', md: 60 }}
+        >
           <Heading size="md">Health & safety</Heading>
           <VStack spacing={3} alignItems="flex-start">
             <Text>Enhanced cleaning process</Text>
@@ -32,7 +40,11 @@ const ThingsToKnow = () => {
             <Text>Smoke alarm not reported</Text>
           </VStack>
         </VStack>
-        <VStack spacing={2} alignItems="flex-start" maxW={60}>
+        <VStack
+          spacing={2}
+          alignItems="flex-start"
+          maxW={{ base: 'fit-content', md: 60 }}
+        >
           <Heading size="md">Cancellation policy</Heading>
           <VStack spacing={3} alignItems="flex-start">
             <Text>Free cancellation before Nov 14</Text>
