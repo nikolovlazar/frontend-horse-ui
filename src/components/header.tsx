@@ -12,6 +12,7 @@ const Header = () => {
     <Stack
       direction={{ base: 'column', md: 'row' }}
       justifyContent="space-between"
+      alignItems={{ base: 'stretch', md: 'center' }}
       w="full"
     >
       <Button leftIcon={<IoIosArrowBack />} variant="outline" rounded="full">
